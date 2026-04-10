@@ -89,7 +89,6 @@
         android:padding="24dp"
         android:visibility="gone">
 
-        <!-- Avatar -->
         <ImageView
             android:id="@+id/iv_avatar"
             android:layout_width="120dp"
@@ -98,7 +97,6 @@
             android:contentDescription="User Avatar"
             android:src="@drawable/user_avater" />
 
-        <!-- Name -->
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
@@ -110,7 +108,7 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- Email -->
+
         <TextView
             android:id="@+id/tv_email"
             android:layout_width="wrap_content"
@@ -121,7 +119,6 @@
             android:textColor="#666666"
             android:textSize="16sp" />
 
-        <!-- Logout Button (now directly below Email) -->
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
