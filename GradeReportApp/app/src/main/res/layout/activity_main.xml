@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/studentNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name: Mubtasin Karim"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C1C" />
+
+        <TextView
+            android:id="@+id/studentIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID: 22-48455-3"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/semesterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester: Fall 25-26"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/departmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department: Computer Science and Engineering"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:scrollbars="horizontal">
+
+            <TableLayout
+                android:id="@+id/gradeTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#FFFFFF"
+                android:elevation="4dp" />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/gpaValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA: 3.45"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <EditText
+                android:id="@+id/subjectNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Subject Name"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/marksObtainedInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Obtained"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/marksTotalInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Total"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addSubjectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CAF50" />
+
+        <Button
+            android:id="@+id/printShareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print / Share Report"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2196F3" />
+
+    </LinearLayout>
+</ScrollView>
