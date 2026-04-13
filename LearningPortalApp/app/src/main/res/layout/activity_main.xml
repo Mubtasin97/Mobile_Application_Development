@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Back"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Forward"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Refresh"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Home"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter URL"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnGoogle" android:text="Google" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnYouTube" android:text="YouTube" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnWikipedia" android:text="Wikipedia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnKhan" android:text="Khan Academy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnUniversity" android:text="University" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
